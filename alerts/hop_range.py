@@ -3,7 +3,7 @@ import json
 
 # Kafka topic and Hop username
 TOPIC = "igwn.gwistat.H1.range_history"
-HOP_USER = "samuele.ronchini-4ffd4374"   # replace if needed
+HOP_USER = "samuele.ronchini-5b5f5b4e"   # replace if needed
 
 # Output files
 OUTPUT_FILE = "range_history_H1.txt"
