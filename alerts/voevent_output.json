@@ -1,0 +1,217 @@
+{
+  "voe:VOEvent": {
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xmlns:voe": "http://www.ivoa.net/xml/VOEvent/v2.0",
+    "@xsi:schemaLocation": "http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd",
+    "@version": "2.0",
+    "@role": "observation",
+    "@ivorn": "ivo://org.svom/fsc#sbYYMMDDnn_eclairs-wakeup",
+    "Who": {
+      "AuthorIVORN": "ivo://org.svom/FSC",
+      "Author": {
+        "title": "SVOM French Science Center",
+        "shortName": "FSC",
+        "contactName": "Timothe Roland",
+        "contactEmail": "svom-contact@cea.fr"
+      },
+      "Date": "2022-04-04T11:54:42"
+    },
+    "What": {
+      "Param": [
+        {
+          "@name": "Packet_Type",
+          "@value": "202"
+        },
+        {
+          "@name": "Pkt_Ser_Num",
+          "@value": "1"
+        },
+        {
+          "@name": "Instrument",
+          "@value": "ECLAIRs",
+          "@ucd": "instr"
+        }
+      ],
+      "Group": [
+        {
+          "@name": "Svom_Identifiers",
+          "Param": [
+            {
+              "@name": "Notice_Level",
+              "@value": "N1e",
+              "@ucd": "meta.code.class"
+            },
+            {
+              "@name": "Burst_Id",
+              "@value": "sbYYMMDDnn",
+              "@ucd": "meta.id"
+            }
+          ]
+        },
+        {
+          "@name": "Detection_Info",
+          "Param": [
+            {
+              "@name": "SNR",
+              "@value": "6.58",
+              "@unit": "sigma",
+              "@ucd": "stat.snr"
+            },
+            {
+              "@name": "Time_Window_Start",
+              "@value": "2022-04-04T11:54:30.2Z",
+              "@ucd": "time.start"
+            },
+            {
+              "@name": "Time_Window_End",
+              "@value": "2022-04-04T11:54:32.2Z",
+              "@ucd": "time.end"
+            },
+            {
+              "@name": "Timescale",
+              "@value": "2",
+              "@unit": "s",
+              "@ucd": "time.interval"
+            },
+            {
+              "@name": "Lower_Energy_Bound",
+              "@value": "4",
+              "@unit": "keV",
+              "@ucd": "em.energy"
+            },
+            {
+              "@name": "Upper_Energy_Bound",
+              "@value": "50",
+              "@unit": "keV",
+              "@ucd": "em.energy"
+            },
+            {
+              "@name": "Trigger_Type",
+              "@value": "count_rate",
+              "@ucd": "instr.param"
+            }
+          ]
+        },
+        {
+          "@name": "Target_Info",
+          "Param": [
+            {
+              "@name": "Galactic_Lon",
+              "@value": "332.72",
+              "@unit": "deg",
+              "@ucd": "pos.galactic.lon"
+            },
+            {
+              "@name": "Galactic_Lat",
+              "@value": "-21.46",
+              "@unit": "deg",
+              "@ucd": "pos.galactic.lat"
+            },
+            {
+              "@name": "Sun_Angle",
+              "@value": "49.58",
+              "@unit": "deg",
+              "@ucd": "pos.angDistance"
+            },
+            {
+              "@name": "Moon_Angle",
+              "@value": "128.6",
+              "@unit": "deg",
+              "@ucd": "pos.angDistance"
+            }
+          ]
+        },
+        {
+          "@name": "Satellite_Info",
+          "Param": [
+            {
+              "@name": "Slew_Status",
+              "@value": "not_requested",
+              "@ucd": "meta.code.status"
+            },
+            {
+              "@name": "Sat_Attitude_Ra",
+              "@value": "2.36",
+              "@unit": "deg",
+              "@ucd": "pos.eq.ra"
+            },
+            {
+              "@name": "Sat_Attitude_Dec",
+              "@value": "148.22",
+              "@unit": "deg",
+              "@ucd": "pos.eq.de"
+            },
+            {
+              "@name": "Sat_Attitude_Roll",
+              "@value": "63.22",
+              "@unit": "deg",
+              "@ucd": "pos.posAng"
+            },
+            {
+              "@name": "Sat_Position_Lat",
+              "@value": "39.97",
+              "@unit": "deg",
+              "@ucd": "pos.earth.lat"
+            },
+            {
+              "@name": "Sat_Position_Lon",
+              "@value": "116.39",
+              "@unit": "deg",
+              "@ucd": "pos.earth.lon"
+            },
+            {
+              "@name": "Sat_Position_Height",
+              "@value": "614",
+              "@unit": "km",
+              "@ucd": "pos.earth.altitude"
+            }
+          ]
+        }
+      ]
+    },
+    "WhereWhen": {
+      "ObsDataLocation": {
+        "ObservatoryLocation": {
+          "@id": "GEOLEO"
+        },
+        "ObservationLocation": {
+          "AstroCoordSystem": {
+            "@id": "UTC-FK5-GEO"
+          },
+          "AstroCoords": {
+            "@coord_system_id": "UTC-FK5-GEO",
+            "Time": {
+              "@unit": "s",
+              "TimeInstant": {
+                "ISOTime": "2022-04-04T11:54:30.2"
+              }
+            },
+            "Position2D": {
+              "@unit": "deg",
+              "Name1": "RA",
+              "Name2": "Dec",
+              "Value2": {
+                "C1": "50.4488",
+                "C2": "10.0041"
+              },
+              "Error2Radius": "0.2"
+            }
+          }
+        }
+      }
+    },
+    "Why": {
+      "@importance": "0.7",
+      "Inference": {
+        "@probability": "0.7",
+        "Concept": "process.variation.burst;em.gamma"
+      }
+    },
+    "How": {
+      "Description": "N1e notice, data from ECLAIRs instrument",
+      "Reference": {
+        "@uri": "https://www.svom.eu/en/telescope-eclairs-en"
+      }
+    }
+  }
+}
