@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: alerts/skymaps
+    title: Sky Maps Tutorial
+  - file: alerts/kafka_listener
+    title: Kafka Listener
+  - file: GWFish/gwfish_tutorial
+    title: GWFish Tutorial
+  - file: GWFish/supernova_signals
+    title: Supernova Signals
+  - file: GWFish/cosmo_tutorial/cosmo_tutorial
+    title: Cosmology Tutorial
