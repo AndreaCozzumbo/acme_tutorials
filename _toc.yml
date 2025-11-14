@@ -3,9 +3,14 @@
 
 format: jb-book
 root: intro
-chapters:
-  - file: alerts/skymaps
-  - file: alerts/kafka_listener
-  - file: GWFish/gwfish_tutorial
-  - file: GWFish/supernova_signals
-  - file: GWFish/cosmo_tutorial/cosmo_tutorial
+parts:
+  - caption: Alerts and Notifications
+    chapters:
+      - file: alerts/skymaps
+      - file: alerts/kafka
+  - caption: GWFish Tutorials
+    chapters:
+      - file: GWFish/gwfish_tutorial
+      - file: GWFish/supernova_signals
+      - file: GWFish/cosmo_tutorial/cosmo_tutorial
+  

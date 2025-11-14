@@ -12,7 +12,7 @@ execute:
   allow_errors: false
 
 # Exclude patterns
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**/cosmo_MCMC", "**/pop_gwfish_results", "**/tutorial_results", "**/waveforms", "**/gcn_alerts", "**/images"]
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**/cosmo_MCMC", "**/pop_gwfish_results", "**/tutorial_results", "**/waveforms", "**/gcn_alerts", "**/images", ".venv", "**/.venv"]
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -31,14 +31,51 @@ html:
   use_edit_page_button: true
   home_page_in_navbar: true
   baseurl: https://samueleronchini.github.io/acme_tutorials/
+  extra_footer: |
+    <div class="footer-text">
+      ACME Tutorials - Advanced Computational Methods for Astrophysics
+    </div>
+
+# Sphinx Book Theme customization
+sphinx:
+  extra_extensions:
+    - sphinx_design
+  config:
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      logo_only: false
+      show_toc_level: 2
+      repository_url: https://github.com/samueleronchini/acme_tutorials
+      repository_branch: main
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true
+      use_download_button: true
+      use_fullscreen_button: true
+      launch_buttons:
+        binderhub_url: https://mybinder.org
+        notebook_interface: jupyterlab
+        thebe: true
+      home_page_in_navbar: true
+      navigation_with_keys: false
+      show_navbar_depth: 1
+      collapse_navigation: false
+      announcement: ""
+    html_logo: ""
+    html_title: "ACME Tutorials"
+    html_css_files:
+      - custom.css
+    thebe_config:
+      repository_url: https://github.com/samueleronchini/acme_tutorials
+      repository_branch: main
+      path_to_docs: ""
 
 # Launch buttons for interactive sessions
 launch_buttons:
   notebook_interface: jupyterlab
   binderhub_url: https://mybinder.org
   thebe: true
-  thebe_config:
-    use_thebe_lite: false
+  colab_url: ""
 
 # MyST settings
 parse:

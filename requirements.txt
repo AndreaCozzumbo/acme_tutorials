@@ -21,8 +21,9 @@ ligo.skymap>=1.0.0
 # Data handling
 h5py>=3.0.0
 
-# Kafka for alert streaming (if needed)
-kafka-python>=2.0.0
+# Kafka for alert streaming
+gcn-kafka
+
 
 # Additional utilities
 lxml>=4.6.0

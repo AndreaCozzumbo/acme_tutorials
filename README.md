@@ -39,14 +39,16 @@ Once you've pushed these configuration files to your repository, the GitHub Acti
 To build and preview the book locally:
 
 ```bash
+# Clone the repo
+git clone https://github.com/samueleronchini/acme_tutorials.git
+cd acme_tutorials
+
 # Install dependencies
-pip install jupyter-book
+pip install "jupyter-book<1.0"
 pip install -r requirements.txt
 
-# Build the book
+# Build and view the site
 jupyter-book build .
-
-# Open the built HTML
 open _build/html/index.html  # macOS
 # or
 xdg-open _build/html/index.html  # Linux
