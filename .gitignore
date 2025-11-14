@@ -147,3 +147,5 @@ Thumbs.db
 # Project specific
 *.yaml
 !detector_template.yaml
+# MyST build outputs
+_build
