@@ -7,7 +7,7 @@ author: Samuele Ronchini
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: cache
+  execute_notebooks: "off"
   timeout: 180
   allow_errors: false
 
