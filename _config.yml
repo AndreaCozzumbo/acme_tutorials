@@ -3,7 +3,6 @@
 
 title: ACME Tutorials
 author: Samuele Ronchini
-logo: ""
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -11,6 +10,9 @@ execute:
   execute_notebooks: cache
   timeout: 180
   allow_errors: false
+
+# Exclude patterns
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**/cosmo_MCMC", "**/pop_gwfish_results", "**/tutorial_results", "**/waveforms", "**/gcn_alerts", "**/images"]
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -38,7 +40,9 @@ html:
 launch_buttons:
   notebook_interface: jupyterlab
   binderhub_url: https://mybinder.org
-  thebe: false
+  thebe: true
+  thebe_config:
+    use_thebe_lite: false
 
 # MyST settings
 parse:
