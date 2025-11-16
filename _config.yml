@@ -65,18 +65,10 @@ sphinx:
       announcement: ""
     html_logo: ""
     html_title: "ACME Tutorials"
+    templates_path:
+      - _templates
     html_css_files:
       - custom.css
-    html_js_files:
-      - thebe_config.js
-    thebe_config:
-      always_load: true
-      selector: "div.thebelab-cell"
-      binderOptions:
-        repo: "samueleronchini/acme_tutorials"
-        ref: "main"
-        binderUrl: "https://mybinder.org"
-        repoProvider: "github"
 
 # Launch buttons for interactive sessions
 launch_buttons:
@@ -84,6 +76,13 @@ launch_buttons:
   binderhub_url: https://mybinder.org
   thebe: true
   colab_url: ""
+
+# Thebe configuration (must be at root level for Jupyter Book)
+thebe:
+  config:
+    repository_url: https://github.com/samueleronchini/acme_tutorials
+    repository_branch: main
+    repository_path: ""
 
 # MyST settings
 parse:
