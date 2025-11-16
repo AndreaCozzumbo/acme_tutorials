@@ -10,7 +10,7 @@ dependencies:
   - astropy
   - astropy-healpix
   - healpy
-  - ligo-skymap
+  - ligo.skymap
   - h5py
   - lxml
   - jupyterlab
