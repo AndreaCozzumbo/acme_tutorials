@@ -4,11 +4,13 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Alerts and Notifications
+  - caption: Multi-messenger Alert System
     chapters:
       - file: alerts/skymaps_1_intro
       - file: alerts/kafka
       - file: alerts/slack
+      - file: alerts/telegram
+      - file: alerts/mail
   - caption: GWFish Tutorials
     chapters:
       - file: GWFish/gwfish_tutorial

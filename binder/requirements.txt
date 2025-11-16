@@ -30,6 +30,7 @@ corner
 tqdm
 tables
 sympy
+slack_sdk
 
 # GWFish for tutorials (lightweight Fisher matrix code)
 git+https://github.com/janosch314/GWFish.git

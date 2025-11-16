@@ -17,6 +17,7 @@ dependencies:
   - ipykernel
   - ipywidgets>=8.0
   - notebook<7.0
+  - slack_sdk
   - pip
   - pip:
       - xmltodict
