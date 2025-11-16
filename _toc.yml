@@ -6,7 +6,7 @@ root: intro
 parts:
   - caption: Multi-messenger Alert System
     chapters:
-      - file: alerts/skymaps_1_intro
+      - file: alerts/skymaps
       - file: alerts/kafka
       - file: alerts/slack
       - file: alerts/telegram
