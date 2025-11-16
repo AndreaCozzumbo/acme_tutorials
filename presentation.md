@@ -8,13 +8,16 @@ Click the button below to view the presentation:
   </a>
 </div>
 
-```{admonition} Presentation on iCloud
+```{admonition} How to View in Presentation Mode
 :class: tip
 
-- Click the button above to open the Keynote presentation on iCloud
-- The presentation will open in your browser
-- You can navigate using the controls in the Keynote viewer
-- Works on any device with a web browser
+**After clicking the button above:**
+1. The Keynote will open in iCloud
+2. Click the **Play** button (▶️) in the top toolbar to start the presentation
+3. Use arrow keys or click to navigate through slides
+4. Press **ESC** to exit presentation mode
+
+📱 Works on any device with a web browser!
 ```
 
 ```{note}
