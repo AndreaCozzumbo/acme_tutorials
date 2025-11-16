@@ -1,12 +1,15 @@
 {
-  "repository_url": "https://github.com/samueleronchini/acme_tutorials",
-  "repository_branch": "main",
   "binderOptions": {
     "repo": "samueleronchini/acme_tutorials",
     "ref": "main",
-    "binderUrl": "https://mybinder.org"
+    "binderUrl": "https://mybinder.org",
+    "repoProvider": "github"
   },
-  "selector": ".thebe",
+  "kernelOptions": {
+    "name": "python3",
+    "kernelName": "python3"
+  },
+  "selector": "div.thebelab-cell",
   "requestKernel": true,
   "predefinedOutput": true,
   "mountActivateWidget": true,
