@@ -31,6 +31,8 @@ html:
   use_edit_page_button: true
   home_page_in_navbar: true
   baseurl: https://samueleronchini.github.io/acme_tutorials/
+  extra_paths:
+    - slides
   extra_footer: |
     <div class="footer-text">
       ACME Tutorials - Advanced Computational Methods for Astrophysics

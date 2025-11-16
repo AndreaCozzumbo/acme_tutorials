@@ -18,6 +18,8 @@ site:
       url: /alerts/skymaps
     - title: Kafka Listener
       url: /alerts/kafka_listener
+    - title: Post on Slack
+      url: /alerts/slack
     - title: GWFish Tutorial
       url: /GWFish/gwfish_tutorial
     - title: Supernova Signals

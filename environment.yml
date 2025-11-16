@@ -1,0 +1,19 @@
+name: acme-tutorials
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - astropy
+  - astropy-healpix
+  - healpy
+  - ligo-skymap
+  - h5py
+  - lxml
+  - pip
+  - pip:
+      - notebook
+      - gcn-kafka

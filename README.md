@@ -1,6 +1,7 @@
 # ACME Tutorials
 
 [![Deploy Jupyter Book](https://github.com/samueleronchini/acme_tutorials/actions/workflows/deploy.yml/badge.svg)](https://github.com/samueleronchini/acme_tutorials/actions/workflows/deploy.yml)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samueleronchini/acme_tutorials/main)
 
 Interactive tutorials for gravitational wave astronomy and related topics, powered by Jupyter Book and Binder.
 

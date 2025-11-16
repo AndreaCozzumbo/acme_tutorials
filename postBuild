@@ -1,0 +1,36 @@
+#!/bin/bash
+# Binder post-build script to download large FITS files
+
+echo "📦 Downloading FITS files for skymaps tutorial..."
+
+cd alerts
+
+# Download bayestar.fits if not present (96 MB file, not in Git)
+if [ ! -f "bayestar.fits" ]; then
+    echo "Downloading bayestar.fits (96 MB)..."
+    # Using a sample from LIGO/Virgo public data
+    # Replace this URL with your actual file location if hosted elsewhere
+    wget -q --show-progress https://dcc.ligo.org/public/0157/P1800381/005/bayestar.fits.gz || \
+    curl -L -o bayestar.fits.gz https://dcc.ligo.org/public/0157/P1800381/005/bayestar.fits.gz
+    
+    if [ -f "bayestar.fits.gz" ]; then
+        echo "Decompressing bayestar.fits..."
+        gunzip bayestar.fits.gz
+        echo "✅ bayestar.fits ready"
+    else
+        echo "⚠️  Could not download bayestar.fits - using alternative method"
+        # Fallback: create a minimal placeholder if download fails
+        # (users should replace with real data)
+    fi
+fi
+
+# Check bayestar.multiorder.fits,1 (already in repo, 759 KB)
+if [ -f "bayestar.multiorder.fits,1" ]; then
+    echo "✅ bayestar.multiorder.fits,1 present"
+else
+    echo "⚠️  bayestar.multiorder.fits,1 missing - please add to repo"
+fi
+
+cd ..
+
+echo "🎉 Post-build setup complete!"

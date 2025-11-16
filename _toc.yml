@@ -8,9 +8,13 @@ parts:
     chapters:
       - file: alerts/skymaps
       - file: alerts/kafka
+      - file: alerts/slack
   - caption: GWFish Tutorials
     chapters:
       - file: GWFish/gwfish_tutorial
       - file: GWFish/supernova_signals
       - file: GWFish/cosmo_tutorial/cosmo_tutorial
+  - caption: Presentations
+    chapters:
+      - file: presentation
   
