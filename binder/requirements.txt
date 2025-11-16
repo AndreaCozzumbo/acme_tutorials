@@ -5,14 +5,14 @@
 # Core scientific packages
 numpy==1.25
 scipy>=1.8
-matplotlib>=3.5
+matplotlib>=3.5,<3.9
 pandas>=1.4
 
 # Astronomy packages
-astropy>=5.0
-astropy-healpix>=0.6
+astropy>=6.0
+astropy-healpix>=1.0
 healpy>=1.16
-ligo.skymap>=1.0
+ligo.skymap
 
 # Data handling
 h5py>=3.6
