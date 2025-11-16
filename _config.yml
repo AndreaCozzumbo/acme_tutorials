@@ -65,8 +65,6 @@ sphinx:
       announcement: ""
     html_logo: ""
     html_title: "ACME Tutorials"
-    templates_path:
-      - _templates
     html_css_files:
       - custom.css
 
