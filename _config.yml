@@ -71,6 +71,8 @@ sphinx:
       repository_url: https://github.com/samueleronchini/acme_tutorials
       repository_branch: main
       path_to_docs: ""
+      binder_repo_url: https://github.com/samueleronchini/acme_tutorials
+      binder_repo_ref: main
 
 # Launch buttons for interactive sessions
 launch_buttons:

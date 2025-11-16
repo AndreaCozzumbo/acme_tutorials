@@ -1,0 +1,31 @@
+name: acme-tutorials
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.25
+  - scipy>=1.8
+  - matplotlib>=3.5
+  - pandas>=1.4
+  - astropy>=5.0
+  - astropy-healpix>=0.6
+  - healpy>=1.16
+  - ligo.skymap>=1.0
+  - h5py>=3.6
+  - lxml
+  - jupyterlab
+  - ipykernel
+  - ipywidgets>=8.0
+  - notebook<7.0
+  - pip
+  - pip:
+      - xmltodict
+      - corner
+      - tqdm
+      - tables
+      - sympy
+      - git+https://github.com/janosch314/GWFish.git
+      - gcn-kafka
+      # Note: Pacchetti NON installati su Binder (troppo pesanti):
+      # - lalsuite (troppo pesante, causa timeout su Binder)
+      # Per questo pacchetto, usare installazione locale o vedere output pre-calcolati

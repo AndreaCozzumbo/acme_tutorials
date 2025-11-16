@@ -1,0 +1,44 @@
+# Python dependencies for ACME Tutorials
+# NOTE: This file is kept for reference but Binder uses environment.yml
+# If you want to use pip install instead of conda, use this file
+
+# Core scientific packages
+numpy==1.25
+scipy>=1.8
+matplotlib>=3.5
+pandas>=1.4
+
+# Astronomy packages
+astropy>=5.0
+astropy-healpix>=0.6
+healpy>=1.16
+ligo.skymap>=1.0
+
+# Data handling
+h5py>=3.6
+lxml
+
+# Jupyter ecosystem
+jupyterlab
+ipykernel
+ipywidgets>=8.0
+notebook<7.0
+
+# Additional utilities (lightweight)
+xmltodict
+corner
+tqdm
+tables
+sympy
+
+# GWFish for tutorials (lightweight Fisher matrix code)
+git+https://github.com/janosch314/GWFish.git
+
+# GCN Kafka client for alerts
+gcn-kafka
+
+# NOTE: Packages NOT included for Binder compatibility:
+# - lalsuite (>500MB, causes Binder timeout - use local install)
+# For full functionality with lalsuite, install locally with: pip install lalsuite
+
+

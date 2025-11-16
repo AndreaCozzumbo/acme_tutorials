@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Binder post-build setup for ACME tutorials
+
+echo "📦 Setting up ACME tutorials environment..."
+
+# Download FITS files for skymaps tutorial
+cd alerts
+
+if [ ! -f "bayestar.fits" ]; then
+    echo "Downloading bayestar.fits..."
+    wget -q --show-progress https://dcc.ligo.org/public/0157/P1800381/005/bayestar.fits.gz || \
+    curl -L -o bayestar.fits.gz https://dcc.ligo.org/public/0157/P1800381/005/bayestar.fits.gz
+
+    if [ -f "bayestar.fits.gz" ]; then
+        gunzip bayestar.fits.gz
+        echo "✅ bayestar.fits ready"
+    fi
+fi
+
+cd ..
+
+# Verify critical packages
+echo "🔍 Verifying Python environment..."
+
+# Check Python version
+python --version
+
+# Verify core packages
+python -c "import numpy; print(f'✅ numpy {numpy.__version__}')" || echo "❌ numpy not found"
+python -c "import astropy; print(f'✅ astropy {astropy.__version__}')" || echo "❌ astropy not found"
+python -c "import healpy; print(f'✅ healpy {healpy.__version__}')" || echo "❌ healpy not found"
+
+# Verify GWFish installation
+python -c "import GWFish; print(f'✅ GWFish {GWFish.__version__}')" || echo "⚠️  GWFish not found"
+
+# Verify gcn-kafka
+python -c "import gcn_kafka; print('✅ gcn-kafka installed')" || echo "⚠️  gcn-kafka not found"
+
+echo ""
+echo "🎉 Binder setup complete!"
+echo "📦 Core packages verified and ready"
+echo ""
+echo "⚠️  Note: lalsuite is NOT available on Binder (too large for build)"
+echo "   For tutorials requiring lalsuite, install locally"
