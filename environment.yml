@@ -13,7 +13,9 @@ dependencies:
   - ligo-skymap
   - h5py
   - lxml
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
   - pip
   - pip:
-      - notebook
       - gcn-kafka
