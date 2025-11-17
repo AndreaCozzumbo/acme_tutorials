@@ -800,6 +800,50 @@ html[data-theme="dark"] .nav-btn:hover {
     border-color: #64748b;
 }
 
+/* ========================================
+   CUSTOM FOOTER STYLING
+   ======================================== */
+
+/* Hide default copyright notice */
+.bd-footer-copyright {
+    display: none !important;
+}
+
+/* Style the footer text */
+.footer-text {
+    text-align: center;
+    font-size: 0.9em;
+    color: #6b7280;
+    padding: 1.5em 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-text a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Dark mode footer */
+html[data-theme="dark"] .footer-text {
+    color: #9ca3af;
+    border-top-color: #374151;
+}
+
+html[data-theme="dark"] .footer-text a {
+    color: #60a5fa;
+}
+
+html[data-theme="dark"] .footer-text a:hover {
+    color: #93c5fd;
+}
+
 html[data-theme="dark"] .slide-counter {
     color: #9ca3af;
 }

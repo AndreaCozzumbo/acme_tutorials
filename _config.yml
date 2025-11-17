@@ -35,7 +35,7 @@ html:
     - slides
   extra_footer: |
     <div class="footer-text">
-      ACME Tutorials - Advanced Computational Methods for Astrophysics
+      ACME Tutorials - By <a href="https://samueleronchini.github.io" target="_blank">Samuele Ronchini</a>
     </div>
 
 # Sphinx Book Theme customization
@@ -87,6 +87,7 @@ sphinx:
     html_title: "ACME Tutorials"
     html_css_files:
       - custom.css
+    html_show_copyright: false
 
 # Launch buttons for interactive sessions
 launch_buttons:

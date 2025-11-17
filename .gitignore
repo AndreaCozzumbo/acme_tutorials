@@ -151,6 +151,8 @@ Thumbs.db
 
 # Credentials - NEVER commit actual credentials!
 alerts/credentials.txt
+# But DO include the template for users to copy
+!alerts/credentials.example.txt
 
 # MyST build outputs
 _build

@@ -6,6 +6,7 @@ root: intro
 parts:
   - caption: Multi-messenger Alert System
     chapters:
+      - file: alerts/intro
       - file: alerts/kafka
       - file: alerts/igwn
       - file: alerts/scimma
