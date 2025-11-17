@@ -148,5 +148,9 @@ Thumbs.db
 # Project specific
 *.yaml
 !detector_template.yaml
+
+# Credentials - NEVER commit actual credentials!
+alerts/credentials.txt
+
 # MyST build outputs
 _build

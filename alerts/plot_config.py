@@ -36,7 +36,7 @@ def setup_matplotlib_style():
     # Universal matplotlib settings that work in both light and dark mode
     matplotlib.rcParams.update({
         # High-quality output
-        'figure.dpi': 500,              # Display DPI (screen)
+        'figure.dpi': 300,              # Display DPI (screen)
         'savefig.dpi': 300,             # Save DPI (high quality for web)
         'figure.figsize': (16, 6),      # Default figure size in inches (max width)
         

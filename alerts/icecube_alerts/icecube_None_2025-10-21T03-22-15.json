@@ -1,28 +1,28 @@
 {
-  "trigger_time": "2025-11-16T23:22:21.760742Z",
+  "trigger_time": "2025-10-21T03:22:15.181152Z",
   "event_id": null,
   "ra": null,
   "dec": null,
   "ra_uncertainty": null,
-  "pval_generic": 1.0,
+  "pval_generic": 0.5271,
   "pval_generic_post_trial": 1.0,
-  "sigma_generic_pre_trial": -Infinity,
+  "sigma_generic_pre_trial": -0.0679819535834204,
   "sigma_generic_post_trial": -Infinity,
   "generic_interpretation": "Weak or No Evidence",
-  "pval_bayesian": 0.992,
-  "pval_bayesian_post_trial": 1.0,
-  "sigma_bayesian_pre_trial": -2.408915545815461,
-  "sigma_bayesian_post_trial": -Infinity,
+  "pval_bayesian": 0.2829,
+  "pval_bayesian_post_trial": 0.9999999999999963,
+  "sigma_bayesian_pre_trial": 0.574247988139392,
+  "sigma_bayesian_post_trial": -7.778698051012084,
   "bayesian_interpretation": "Weak or No Evidence",
   "n_events_coincident": 0,
   "flux_sensitivity": {
     "flux_sensitivity": [
       0.0277,
-      0.8907
+      1.0335
     ],
     "sensitive_energy_range": [
-      566,
-      22400000
+      521,
+      23400000
     ]
   }
 }

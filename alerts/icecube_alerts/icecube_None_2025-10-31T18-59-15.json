@@ -1,0 +1,27 @@
+{
+  "trigger_time": "2025-10-31T18:59:15.905518Z",
+  "event_id": null,
+  "ra": null,
+  "dec": null,
+  "ra_uncertainty": null,
+  "pval_generic": 0.0993,
+  "pval_generic_post_trial": 0.9999712911183881,
+  "sigma_generic_pre_trial": 1.285550447259899,
+  "sigma_generic_post_trial": -4.023179247806985,
+  "generic_interpretation": "Weak or No Evidence",
+  "n_events_coincident": 1,
+  "most_probable_direction": {
+    "ra": 168.49,
+    "dec": 39.64
+  },
+  "flux_sensitivity": {
+    "flux_sensitivity": [
+      0.0358,
+      0.0659
+    ],
+    "sensitive_energy_range": [
+      536,
+      1340000
+    ]
+  }
+}

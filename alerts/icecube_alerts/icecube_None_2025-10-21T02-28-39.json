@@ -1,0 +1,23 @@
+{
+  "trigger_time": "2025-10-21T02:28:39.681780Z",
+  "event_id": null,
+  "ra": null,
+  "dec": null,
+  "ra_uncertainty": null,
+  "pval_bayesian": 0.5072,
+  "pval_bayesian_post_trial": 1.0,
+  "sigma_bayesian_pre_trial": -0.018048703440788155,
+  "sigma_bayesian_post_trial": -Infinity,
+  "bayesian_interpretation": "Weak or No Evidence",
+  "n_events_coincident": 0,
+  "flux_sensitivity": {
+    "flux_sensitivity": [
+      0.0467,
+      1.0346
+    ],
+    "sensitive_energy_range": [
+      2100,
+      23500000
+    ]
+  }
+}

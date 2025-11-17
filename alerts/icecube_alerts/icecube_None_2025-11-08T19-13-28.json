@@ -1,0 +1,32 @@
+{
+  "trigger_time": "2025-11-08T19:13:28.506349Z",
+  "event_id": null,
+  "ra": null,
+  "dec": null,
+  "ra_uncertainty": null,
+  "pval_generic": 0.0076,
+  "pval_generic_post_trial": 0.5336891077022343,
+  "sigma_generic_pre_trial": 2.427578428974786,
+  "sigma_generic_post_trial": -0.0845466872979737,
+  "generic_interpretation": "Weak or No Evidence",
+  "pval_bayesian": 0.0421,
+  "pval_bayesian_post_trial": 0.9864475652212401,
+  "sigma_bayesian_pre_trial": 1.7268199746517756,
+  "sigma_bayesian_post_trial": -2.210004217993712,
+  "bayesian_interpretation": "Weak or No Evidence",
+  "n_events_coincident": 1,
+  "most_probable_direction": {
+    "ra": 15.12,
+    "dec": 9.06
+  },
+  "flux_sensitivity": {
+    "flux_sensitivity": [
+      0.0277,
+      0.8982
+    ],
+    "sensitive_energy_range": [
+      587,
+      22300000
+    ]
+  }
+}
