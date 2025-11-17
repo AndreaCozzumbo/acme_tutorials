@@ -207,19 +207,50 @@ pre {
    MATHEMATICAL EQUATIONS FORMATTING
    ======================================== */
 
-/* Display equations - better spacing */
+/* Display equations - centered with horizontal scrolling */
 .bd-content div.math {
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 1em 0;
-    margin: 1.3em 0;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 1em 0.5em;
+    margin: 1.3em auto;
+    max-width: 100%;
+    display: block;
+    text-align: center;
 }
 
 /* Prevent equations from being cut off */
 .math {
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: block;
+    text-align: center;
+}
+
+/* MathJax display containers - force scrolling and center */
+.MathJax_Display,
+mjx-container[display="true"],
+mjx-container[display="block"] {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    padding: 0.5em 0 !important;
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+/* MathJax 3 CHTML output containers */
+mjx-math {
+    display: inline-block !important;
+}
+
+/* Wrapper for display equations */
+.bd-content p + div.math,
+.cell_output div.math {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    text-align: center;
 }
 
 /* Better spacing around equations */
@@ -231,36 +262,76 @@ pre {
     margin-top: 1.2em;
 }
 
-/* Scrollbar styling for long equations */
-div.math::-webkit-scrollbar {
-    height: 6px;
+/* Visible scrollbar styling for long equations */
+div.math::-webkit-scrollbar,
+.MathJax_Display::-webkit-scrollbar,
+mjx-container[display="true"]::-webkit-scrollbar,
+mjx-container[display="block"]::-webkit-scrollbar {
+    height: 8px;
 }
 
-div.math::-webkit-scrollbar-track {
+div.math::-webkit-scrollbar-track,
+.MathJax_Display::-webkit-scrollbar-track,
+mjx-container[display="true"]::-webkit-scrollbar-track,
+mjx-container[display="block"]::-webkit-scrollbar-track {
     background: #f1f5f9;
-    border-radius: 3px;
+    border-radius: 4px;
+    margin: 0 0.5em;
 }
 
-div.math::-webkit-scrollbar-thumb {
+div.math::-webkit-scrollbar-thumb,
+.MathJax_Display::-webkit-scrollbar-thumb,
+mjx-container[display="true"]::-webkit-scrollbar-thumb,
+mjx-container[display="block"]::-webkit-scrollbar-thumb {
     background: #cbd5e1;
-    border-radius: 3px;
+    border-radius: 4px;
+    border: 2px solid #f1f5f9;
 }
 
-div.math::-webkit-scrollbar-thumb:hover {
+div.math::-webkit-scrollbar-thumb:hover,
+.MathJax_Display::-webkit-scrollbar-thumb:hover,
+mjx-container[display="true"]::-webkit-scrollbar-thumb:hover,
+mjx-container[display="block"]::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
 
+/* Firefox scrollbar styling */
+div.math,
+.MathJax_Display,
+mjx-container[display="true"],
+mjx-container[display="block"] {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
 /* Dark mode equation styling */
-html[data-theme="dark"] div.math::-webkit-scrollbar-track {
+html[data-theme="dark"] div.math::-webkit-scrollbar-track,
+html[data-theme="dark"] .MathJax_Display::-webkit-scrollbar-track,
+html[data-theme="dark"] mjx-container[display="true"]::-webkit-scrollbar-track,
+html[data-theme="dark"] mjx-container[display="block"]::-webkit-scrollbar-track {
     background: #334155;
 }
 
-html[data-theme="dark"] div.math::-webkit-scrollbar-thumb {
+html[data-theme="dark"] div.math::-webkit-scrollbar-thumb,
+html[data-theme="dark"] .MathJax_Display::-webkit-scrollbar-thumb,
+html[data-theme="dark"] mjx-container[display="true"]::-webkit-scrollbar-thumb,
+html[data-theme="dark"] mjx-container[display="block"]::-webkit-scrollbar-thumb {
     background: #475569;
+    border-color: #334155;
 }
 
-html[data-theme="dark"] div.math::-webkit-scrollbar-thumb:hover {
+html[data-theme="dark"] div.math::-webkit-scrollbar-thumb:hover,
+html[data-theme="dark"] .MathJax_Display::-webkit-scrollbar-thumb:hover,
+html[data-theme="dark"] mjx-container[display="true"]::-webkit-scrollbar-thumb:hover,
+html[data-theme="dark"] mjx-container[display="block"]::-webkit-scrollbar-thumb:hover {
     background: #64748b;
+}
+
+html[data-theme="dark"] div.math,
+html[data-theme="dark"] .MathJax_Display,
+html[data-theme="dark"] mjx-container[display="true"],
+html[data-theme="dark"] mjx-container[display="block"] {
+    scrollbar-color: #475569 #334155;
 }
 
 /* Inline code with minimalist style */
