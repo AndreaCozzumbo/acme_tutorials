@@ -14,6 +14,23 @@
     --pst-font-family-base: "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
     --pst-font-family-heading: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     --pst-font-family-monospace: "Source Code Pro", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* Atom One Dark palette */
+    --atom-bg: #282c34;
+    --atom-panel: #21252b;
+    --atom-surface: #2c313c;
+    --atom-elevated: #353b45;
+    --atom-border: #3a3f4b;
+    --atom-highlight: #2c313c;
+    --atom-text: #abb2bf;
+    --atom-muted: #98a2b3;
+    --atom-accent: #61afef;
+    --atom-green: #98c379;
+    --atom-cyan: #56b6c2;
+    --atom-orange: #d19a66;
+    --atom-yellow: #e5c07b;
+    --atom-red: #e06c75;
+    --atom-purple: #c678dd;
 }
 
 /* Header styling */
@@ -455,223 +472,511 @@ blockquote {
 }
 
 /* ========================================
-   DARK MODE SUPPORT FOR NOTEBOOKS
+   DARK MODE SUPPORT – ATOM ONE DARK
    ======================================== */
 
-/* Dark mode styles - supporting multiple theme selectors */
 html[data-theme="dark"],
 body[data-theme="dark"],
 .theme-dark,
 body.dark-mode {
-    /* Dark mode colors */
-    --pst-color-text-base: #e8e8e8;
-    --pst-color-background: #1e1e1e;
-    --pst-color-surface: #2d2d2d;
+    --pst-color-text-base: var(--atom-text);
+    --pst-color-background: var(--atom-bg);
+    --pst-color-surface: var(--atom-panel);
 }
 
-/* Dark mode body and content */
 html[data-theme="dark"] body,
 html[data-theme="dark"] .bd-content,
 body[data-theme="dark"] .bd-content,
 .theme-dark body,
 .theme-dark .bd-content,
 body.dark-mode .bd-content {
-    background-color: #1e1e1e;
-    color: #e8e8e8;
+    background-color: var(--atom-bg);
+    color: var(--atom-text);
 }
 
-/* Dark mode paragraphs */
 html[data-theme="dark"] .bd-content p,
 body[data-theme="dark"] .bd-content p,
 .theme-dark .bd-content p {
-    color: #e5e7eb !important;
+    color: var(--atom-text) !important;
 }
 
-/* Dark mode headings */
 html[data-theme="dark"] .bd-content h1,
 html[data-theme="dark"] .bd-content h2,
 html[data-theme="dark"] .bd-content h3,
 html[data-theme="dark"] .bd-content h4,
 html[data-theme="dark"] .bd-content h5,
-html[data-theme="dark"] .bd-content h6,
-body[data-theme="dark"] .bd-content h1,
-body[data-theme="dark"] .bd-content h2,
-body[data-theme="dark"] .bd-content h3,
-body[data-theme="dark"] .bd-content h4,
-body[data-theme="dark"] .bd-content h5,
-body[data-theme="dark"] .bd-content h6,
-.theme-dark .bd-content h1,
-.theme-dark .bd-content h2,
-.theme-dark .bd-content h3,
-.theme-dark .bd-content h4,
-.theme-dark .bd-content h5,
-.theme-dark .bd-content h6 {
-    color: #f3f4f6 !important;
+html[data-theme="dark"] .bd-content h6 {
+    color: #f8fafd !important;
 }
 
 html[data-theme="dark"] .bd-content h1 {
-    border-bottom-color: #374151 !important;
+    border-bottom-color: var(--atom-border) !important;
 }
 
 html[data-theme="dark"] .bd-content h6 {
-    color: #9ca3af !important;
+    color: var(--atom-muted) !important;
 }
 
 html[data-theme="dark"] .bd-content img.intro-hero-logo {
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.55);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65);
 }
 
-/* Dark mode notebook cells */
 html[data-theme="dark"] .cell,
-body[data-theme="dark"] .cell,
-.theme-dark .cell {
-    background-color: #2d2d2d;
-    color: #e8e8e8;
-}
-
 html[data-theme="dark"] .cell_input,
 html[data-theme="dark"] .cell_output,
+body[data-theme="dark"] .cell,
 body[data-theme="dark"] .cell_input,
 body[data-theme="dark"] .cell_output,
+.theme-dark .cell,
 .theme-dark .cell_input,
 .theme-dark .cell_output {
-    background-color: #2d2d2d;
-    color: #e8e8e8 !important;
+    background-color: var(--atom-panel);
+    color: var(--atom-text) !important;
+    border: 1px solid var(--atom-border);
+    border-radius: 10px;
 }
 
-/* Dark mode code blocks */
+html[data-theme="dark"] pre,
 html[data-theme="dark"] div.highlight,
 html[data-theme="dark"] .highlight pre {
-    background-color: #2d2d2d !important;
-    color: #e8e8e8 !important;
-    border-color: #444;
+    background-color: var(--atom-surface) !important;
+    color: var(--atom-text) !important;
+    border: 1px solid var(--atom-border);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
 }
 
-html[data-theme="dark"] pre {
-    background-color: #2d2d2d;
-    color: #e8e8e8;
-    border: 1px solid #444;
-}
-
-/* Dark mode inline code */
 html[data-theme="dark"] code:not(.highlight code),
 html[data-theme="dark"] p code,
 html[data-theme="dark"] li code,
 html[data-theme="dark"] td code {
-    background-color: rgba(100, 116, 139, 0.2);
-    color: #fda4af;
-    border: 1px solid rgba(100, 116, 139, 0.3);
+    background-color: rgba(97, 175, 239, 0.15);
+    color: var(--atom-accent);
+    border: 1px solid rgba(97, 175, 239, 0.35);
 }
 
-html[data-theme="dark"] pre {
-    background-color: #1e293b !important;
-    border-color: #334155 !important;
-}
-
-/* Dark mode tables */
 html[data-theme="dark"] table {
-    color: #e5e7eb;
+    color: var(--atom-text);
 }
 
 html[data-theme="dark"] table th {
     background-color: transparent;
-    color: #f3f4f6;
-    border-color: #4b5563;
+    color: #f8fafd;
+    border-color: var(--atom-border);
 }
 
 html[data-theme="dark"] table td {
-    border-color: #374151;
+    border-color: var(--atom-border);
     background-color: transparent;
-    color: #e5e7eb;
+    color: var(--atom-text);
 }
 
 html[data-theme="dark"] tbody tr:last-child td {
-    border-bottom-color: #4b5563;
+    border-bottom-color: var(--atom-border);
 }
 
 html[data-theme="dark"] tbody tr:hover {
-    background-color: rgba(55, 65, 81, 0.3);
+    background-color: rgba(97, 175, 239, 0.1);
 }
 
-/* Dark mode links */
 html[data-theme="dark"] .bd-content a {
-    color: #60a5fa;
+    color: var(--atom-accent);
     border-bottom-color: transparent;
 }
 
 html[data-theme="dark"] .bd-content a:hover {
-    color: #93c5fd;
-    border-bottom-color: #93c5fd;
+    color: #7cc4ff;
+    border-bottom-color: #7cc4ff;
 }
 
-/* Dark mode admonitions */
 html[data-theme="dark"] .admonition {
-    background-color: #2d2d2d;
-    color: #e8e8e8;
-    border-color: #444;
+    background-color: var(--atom-panel);
+    color: var(--atom-text);
+    border-color: var(--atom-border);
 }
 
-/* Dark mode sidebar */
 html[data-theme="dark"] .bd-sidebar {
-    background-color: #1e1e1e;
-    border-right-color: #444;
+    background-color: var(--atom-bg);
+    border-right-color: var(--atom-border);
 }
 
 html[data-theme="dark"] .bd-sidebar .nav-link {
-    color: #e8e8e8;
+    color: var(--atom-text);
 }
 
 html[data-theme="dark"] .bd-sidebar .nav-link.active {
-    background-color: rgba(110, 180, 255, 0.15);
-    border-left-color: #6eb4ff;
+    background-color: rgba(97, 175, 239, 0.15);
+    border-left-color: var(--atom-accent);
 }
 
 html[data-theme="dark"] .bd-sidebar .navbar-brand img {
-    background-color: #0f172a;
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.5);
+    background-color: #0b1119;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65);
 }
 
 html[data-theme="dark"] .bd-sidebar .navbar-brand .logo__title {
     color: #f8fafc;
 }
 
-/* Dark mode notebook output text */
 html[data-theme="dark"] .output_text,
 html[data-theme="dark"] .output_stream,
 html[data-theme="dark"] .output_stdout,
 html[data-theme="dark"] .output_stderr {
-    color: #e8e8e8 !important;
+    color: var(--atom-text) !important;
 }
 
-/* Dark mode Jupyter outputs */
 html[data-theme="dark"] .jp-OutputArea-output {
-    background-color: #2d2d2d;
-    color: #e8e8e8;
+    background-color: var(--atom-panel);
+    color: var(--atom-text);
 }
 
-/* Dark mode blockquotes */
 html[data-theme="dark"] blockquote {
-    color: #9ca3af;
-    border-left-color: #4b5563;
+    color: var(--atom-muted);
+    border-left-color: var(--atom-border);
 }
 
-/* Dark mode lists */
 html[data-theme="dark"] .bd-content li {
-    color: #e5e7eb;
+    color: var(--atom-text);
 }
 
-/* Dark mode images - prevent inversion */
 html[data-theme="dark"] img {
     filter: none;
-    opacity: 0.9;
+    opacity: 0.92;
 }
 
-/* Dark mode matplotlib/plotly figures */
 html[data-theme="dark"] .output_png,
 html[data-theme="dark"] .output_jpeg {
-    background-color: white;
+    background-color: #111827;
     padding: 10px;
     border-radius: 4px;
+}
+
+html[data-theme="dark"] .footer-text {
+    color: var(--atom-muted);
+    border-top-color: var(--atom-border);
+}
+
+html[data-theme="dark"] .footer-text a {
+    color: var(--atom-accent);
+}
+
+html[data-theme="dark"] .footer-text a:hover {
+    color: #7cc4ff;
+}
+
+html[data-theme="dark"] .slide-counter {
+    color: var(--atom-muted);
+}
+
+html[data-theme="dark"] .fullscreen-btn {
+    background: var(--atom-accent);
+}
+
+html[data-theme="dark"] .fullscreen-btn:hover {
+    background: #7cc4ff;
+}
+
+html[data-theme="dark"] .new-tab-btn {
+    background: var(--atom-border);
+}
+
+html[data-theme="dark"] .new-tab-btn:hover {
+    background: var(--atom-surface);
+}
+
+/* Syntax token colors for Atom One Dark */
+html[data-theme="dark"] .highlight .c,
+html[data-theme="dark"] .highlight .cm,
+html[data-theme="dark"] .highlight .cp,
+html[data-theme="dark"] .highlight .c1,
+html[data-theme="dark"] .highlight .cs {
+    color: #5c6370;
+    font-style: italic;
+}
+
+html[data-theme="dark"] .highlight .k,
+html[data-theme="dark"] .highlight .kd,
+html[data-theme="dark"] .highlight .kn,
+html[data-theme="dark"] .highlight .kr,
+html[data-theme="dark"] .highlight .kt,
+html[data-theme="dark"] .highlight .kp,
+html[data-theme="dark"] .highlight .nb,
+html[data-theme="dark"] .highlight .bp {
+    color: var(--atom-purple);
+}
+
+html[data-theme="dark"] .highlight .s,
+html[data-theme="dark"] .highlight .sb,
+html[data-theme="dark"] .highlight .sc,
+html[data-theme="dark"] .highlight .sd,
+html[data-theme="dark"] .highlight .s1,
+html[data-theme="dark"] .highlight .s2,
+html[data-theme="dark"] .highlight .se,
+html[data-theme="dark"] .highlight .sh,
+html[data-theme="dark"] .highlight .si,
+html[data-theme="dark"] .highlight .sr,
+html[data-theme="dark"] .highlight .ss,
+html[data-theme="dark"] .highlight .sx {
+    color: var(--atom-green);
+}
+
+html[data-theme="dark"] .highlight .m,
+html[data-theme="dark"] .highlight .mb,
+html[data-theme="dark"] .highlight .mf,
+html[data-theme="dark"] .highlight .mh,
+html[data-theme="dark"] .highlight .mi,
+html[data-theme="dark"] .highlight .il {
+    color: var(--atom-orange);
+}
+
+html[data-theme="dark"] .highlight .o,
+html[data-theme="dark"] .highlight .ow {
+    color: var(--atom-text);
+}
+
+html[data-theme="dark"] .highlight .n,
+html[data-theme="dark"] .highlight .nn,
+html[data-theme="dark"] .highlight .nl,
+html[data-theme="dark"] .highlight .py,
+html[data-theme="dark"] .highlight .nv,
+html[data-theme="dark"] .highlight .vc,
+html[data-theme="dark"] .highlight .vg,
+html[data-theme="dark"] .highlight .vi {
+    color: var(--atom-text);
+}
+
+html[data-theme="dark"] .highlight .na,
+html[data-theme="dark"] .highlight .nt {
+    color: var(--atom-cyan);
+}
+
+html[data-theme="dark"] .highlight .nf,
+html[data-theme="dark"] .highlight .fm,
+html[data-theme="dark"] .highlight .nc,
+html[data-theme="dark"] .highlight .ne,
+html[data-theme="dark"] .highlight .nd {
+    color: var(--atom-accent);
+}
+
+html[data-theme="dark"] .highlight .no,
+html[data-theme="dark"] .highlight .ni,
+html[data-theme="dark"] .highlight .bp,
+html[data-theme="dark"] .highlight .w {
+    color: var(--atom-yellow);
+}
+
+html[data-theme="dark"] .highlight .err {
+    color: var(--atom-bg);
+    background-color: var(--atom-red);
+}
+
+/* Live code / Thebe integration */
+.thebe-launch-button,
+button.thebe-launch-button {
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+    border: none;
+    background: #111827;
+    color: #f9fafb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thebe-launch-button:hover,
+button.thebe-launch-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+html[data-theme="dark"] .thebe-launch-button,
+html[data-theme="dark"] button.thebe-launch-button {
+    background: var(--atom-accent);
+    color: var(--atom-bg);
+    box-shadow: 0 12px 30px rgba(97, 175, 239, 0.35);
+}
+
+html[data-theme="dark"] .thebe-launch-button:hover,
+html[data-theme="dark"] button.thebe-launch-button:hover {
+    background: #7cc4ff;
+}
+
+html[data-theme="dark"] .thebe-cell,
+html[data-theme="dark"] .thebe-input,
+html[data-theme="dark"] .thebe-output,
+html[data-theme="dark"] .thebelab-cell,
+html[data-theme="dark"] .thebelab-pre-wrapper {
+    background-color: var(--atom-panel) !important;
+    color: var(--atom-text) !important;
+    border: 1px solid var(--atom-border);
+    border-radius: 10px;
+}
+
+html[data-theme="dark"] .thebe-status,
+html[data-theme="dark"] .thebe-status-field,
+html[data-theme="dark"] .thebe-status-button,
+html[data-theme="dark"] .thebe-buttons button {
+    background-color: var(--atom-surface);
+    color: var(--atom-text);
+    border: 1px solid var(--atom-border);
+}
+
+html[data-theme="dark"] .thebe-status-button {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* CodeMirror (live code) overrides */
+html[data-theme="dark"] .cm-s-jupyter.CodeMirror,
+html[data-theme="dark"] .cm-s-default.CodeMirror,
+html[data-theme="dark"] .thebelab-cell .CodeMirror {
+    background-color: var(--atom-surface) !important;
+    color: var(--atom-text) !important;
+    border: 1px solid var(--atom-border) !important;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-scroll,
+html[data-theme="dark"] .cm-s-default .CodeMirror-scroll,
+html[data-theme="dark"] .thebelab-cell .CodeMirror-scroll {
+    background: transparent !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-lines,
+html[data-theme="dark"] .cm-s-default .CodeMirror-lines,
+html[data-theme="dark"] .thebelab-cell .CodeMirror-lines {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror pre,
+html[data-theme="dark"] .cm-s-default .CodeMirror pre,
+html[data-theme="dark"] .thebelab-cell .CodeMirror pre {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-code > div,
+html[data-theme="dark"] .cm-s-default .CodeMirror-code > div,
+html[data-theme="dark"] .thebelab-cell .CodeMirror-code > div {
+    border-bottom: none !important;
+    background: transparent !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-linebackground,
+html[data-theme="dark"] .cm-s-default .CodeMirror-linebackground,
+html[data-theme="dark"] .thebelab-cell .CodeMirror-linebackground,
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-linewidget,
+html[data-theme="dark"] .cm-s-default .CodeMirror-linewidget,
+html[data-theme="dark"] .thebelab-cell .CodeMirror-linewidget {
+    background: transparent !important;
+    border: none !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-gutters,
+html[data-theme="dark"] .cm-s-default .CodeMirror-gutters {
+    background: var(--atom-panel) !important;
+    border-right: 1px solid var(--atom-border);
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-linenumber,
+html[data-theme="dark"] .cm-s-default .CodeMirror-linenumber {
+    color: var(--atom-muted);
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-activeline-background,
+html[data-theme="dark"] .cm-s-default .CodeMirror-activeline-background {
+    background: rgba(97, 175, 239, 0.12) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-activeline-gutter,
+html[data-theme="dark"] .cm-s-default .CodeMirror-activeline-gutter {
+    background: rgba(97, 175, 239, 0.12) !important;
+    color: var(--atom-text);
+}
+
+html[data-theme="dark"] .cm-s-jupyter .CodeMirror-cursor,
+html[data-theme="dark"] .cm-s-default .CodeMirror-cursor {
+    border-left: 2px solid var(--atom-accent) !important;
+}
+
+/* Syntax colors for CodeMirror */
+html[data-theme="dark"] .cm-s-jupyter span.cm-keyword,
+html[data-theme="dark"] .cm-s-default span.cm-keyword,
+html[data-theme="dark"] .cm-s-jupyter span.cm-atom {
+    color: var(--atom-purple) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-def,
+html[data-theme="dark"] .cm-s-default span.cm-def,
+html[data-theme="dark"] .cm-s-jupyter span.cm-builtin,
+html[data-theme="dark"] .cm-s-default span.cm-builtin,
+html[data-theme="dark"] .cm-s-jupyter span.cm-variable-3,
+html[data-theme="dark"] .cm-s-default span.cm-variable-3 {
+    color: var(--atom-accent) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-variable-2,
+html[data-theme="dark"] .cm-s-default span.cm-variable-2,
+html[data-theme="dark"] .cm-s-jupyter span.cm-tag,
+html[data-theme="dark"] .cm-s-default span.cm-tag {
+    color: var(--atom-cyan) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-string,
+html[data-theme="dark"] .cm-s-default span.cm-string,
+html[data-theme="dark"] .cm-s-jupyter span.cm-string-2,
+html[data-theme="dark"] .cm-s-default span.cm-string-2 {
+    color: var(--atom-green) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-number,
+html[data-theme="dark"] .cm-s-default span.cm-number {
+    color: var(--atom-orange) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-operator,
+html[data-theme="dark"] .cm-s-default span.cm-operator,
+html[data-theme="dark"] .cm-s-jupyter span.cm-property,
+html[data-theme="dark"] .cm-s-default span.cm-property {
+    color: var(--atom-text) !important;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-comment,
+html[data-theme="dark"] .cm-s-default span.cm-comment {
+    color: #5c6370 !important;
+    font-style: italic;
+}
+
+html[data-theme="dark"] .cm-s-jupyter span.cm-error,
+html[data-theme="dark"] .cm-s-default span.cm-error {
+    color: var(--atom-bg) !important;
+    background: var(--atom-red) !important;
+}
+
+/* Plot and media adjustments */
+html[data-theme="dark"] .cell_output img,
+html[data-theme="dark"] .output_area img,
+html[data-theme="dark"] .cell_output_wrapper img,
+html[data-theme="dark"] div.cell img {
+    background-color: transparent !important;
+}
+
+html[data-theme="dark"] .cell_output,
+html[data-theme="dark"] .output_area,
+html[data-theme="dark"] .cell_output_wrapper,
+html[data-theme="dark"] div.cell div.output {
+    background-color: transparent !important;
+}
+
+html[data-theme="dark"] .jp-RenderedImage,
+html[data-theme="dark"] .jp-OutputArea-output {
+    background-color: transparent !important;
+}
+
+html[data-theme="dark"] .cell_output img,
+html[data-theme="dark"] .output_area img {
+    filter: brightness(1.15) contrast(1.05);
+    mix-blend-mode: normal;
 }
 
 /* ========================================

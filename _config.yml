@@ -44,6 +44,7 @@ sphinx:
     - sphinx_design
   config:
     html_theme: sphinx_book_theme
+    pygments_style: default
     mathjax3_config:
       tex:
         macros:

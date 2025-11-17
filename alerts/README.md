@@ -1,4 +1,4 @@
-# 🚨 Alerts Tutorials
+# Alerts Tutorials
 
 Complete tutorials for receiving and processing astronomical alerts (gravitational waves, neutrinos, transients) via Kafka streams.
 
