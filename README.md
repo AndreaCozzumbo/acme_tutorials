@@ -3,6 +3,12 @@
 [![Deploy Jupyter Book](https://github.com/samueleronchini/acme_tutorials/actions/workflows/deploy.yml/badge.svg)](https://github.com/samueleronchini/acme_tutorials/actions/workflows/deploy.yml)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samueleronchini/acme_tutorials/main)
 
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+   <img src="alerts/images/acme.png" alt="ACME Tutorials logo" style="width:75%;max-width:720px;border-radius:18px;box-shadow:0 20px 45px rgba(15,23,42,0.18);">
+</p>
+<!-- markdownlint-enable MD033 -->
+
 Interactive tutorials for gravitational wave astronomy and related topics, powered by Jupyter Book and Binder.
 
 🌐 **Live Site**: <https://samueleronchini.github.io/acme_tutorials/>

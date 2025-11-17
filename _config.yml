@@ -66,6 +66,10 @@ sphinx:
             assistiveMml: true
     html_theme_options:
       logo_only: false
+      logo:
+        image_light: "alerts/images/acme.png"
+        image_dark: "alerts/images/acme.png"
+        text: "ACME Tutorials"
       show_toc_level: 2
       repository_url: https://github.com/samueleronchini/acme_tutorials
       repository_branch: main
@@ -83,7 +87,7 @@ sphinx:
       show_navbar_depth: 1
       collapse_navigation: false
       announcement: ""
-    html_logo: ""
+    html_logo: "alerts/images/acme.png"
     html_title: "ACME Tutorials"
     html_css_files:
       - custom.css

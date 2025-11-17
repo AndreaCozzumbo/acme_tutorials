@@ -31,6 +31,31 @@
     border-right: 1px solid #e0e0e0;
 }
 
+.bd-sidebar .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    padding: 1.2rem 1.25rem 1rem;
+    text-align: center;
+}
+
+.bd-sidebar .navbar-brand img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.bd-sidebar .navbar-brand .logo__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0.3rem 0 0;
+}
+
 .bd-sidebar .nav-link {
     padding: 0.5rem 1rem;
     border-left: 3px solid transparent;
@@ -98,6 +123,15 @@ div.highlight {
 /* Notebook cells */
 .cell {
     margin-bottom: 1.5rem;
+}
+
+.bd-content img.intro-hero-logo {
+    display: block;
+    margin: 2rem auto;
+    width: 75%;
+    max-width: 720px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
 }
 
 /* Tables */
@@ -483,6 +517,10 @@ html[data-theme="dark"] .bd-content h6 {
     color: #9ca3af !important;
 }
 
+html[data-theme="dark"] .bd-content img.intro-hero-logo {
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.55);
+}
+
 /* Dark mode notebook cells */
 html[data-theme="dark"] .cell,
 body[data-theme="dark"] .cell,
@@ -586,6 +624,15 @@ html[data-theme="dark"] .bd-sidebar .nav-link {
 html[data-theme="dark"] .bd-sidebar .nav-link.active {
     background-color: rgba(110, 180, 255, 0.15);
     border-left-color: #6eb4ff;
+}
+
+html[data-theme="dark"] .bd-sidebar .navbar-brand img {
+    background-color: #0f172a;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.5);
+}
+
+html[data-theme="dark"] .bd-sidebar .navbar-brand .logo__title {
+    color: #f8fafc;
 }
 
 /* Dark mode notebook output text */
