@@ -11,6 +11,7 @@ parts:
       - file: alerts/igwn
       - file: alerts/scimma
       - file: alerts/skymaps
+      - file: alerts/pingpong
       - file: alerts/icecube
       - file: alerts/fink
       - file: alerts/slack

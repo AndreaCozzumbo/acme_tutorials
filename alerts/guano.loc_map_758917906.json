@@ -1,0 +1,22 @@
+{
+  "$schema": "https://gcn.nasa.gov/schema/v4.0.0/gcn/notices/swift/bat/guano.schema.json",
+  "mission": "Swift",
+  "instrument": "BAT-GUANO",
+  "messenger": "EM",
+  "record_number": 1,
+  "alert_datetime": "none",
+  "alert_tense": "current",
+  "alert_type": "initial",
+  "trigger_time": "none",
+  "healpix_file": "",
+  "systematic_included": true,
+  "rate_snr": null,
+  "rate_duration": null,
+  "rate_energy_range": [15, 350],
+  "classification": { "GRB": 1 },
+  "far": null,
+  "follow_up_event": "none",
+  "follow_up_type": "GRB",
+  "data_archive_page": "none",
+  "id": ["none"]
+}

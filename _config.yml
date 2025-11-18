@@ -12,7 +12,23 @@ execute:
   allow_errors: false
 
 # Exclude patterns
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**/cosmo_MCMC", "**/pop_gwfish_results", "**/tutorial_results", "**/waveforms", "**/gcn_alerts", "**/images", ".venv", "**/.venv"]
+exclude_patterns: [
+  _build,
+  Thumbs.db,
+  .DS_Store,
+  "**.ipynb_checkpoints",
+  "**/cosmo_MCMC",
+  "**/pop_gwfish_results",
+  "**/tutorial_results",
+  "**/waveforms",
+  "**/gcn_alerts",
+  "**/images",
+  ".venv",
+  "**/.venv",
+  ".venv-test",
+  "**/.venv-test",
+  ".venv-test/**"
+]
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -37,6 +53,9 @@ html:
     <div class="footer-text">
       ACME Tutorials - By <a href="https://samueleronchini.github.io" target="_blank">Samuele Ronchini</a>
     </div>
+
+# Costruisci solo i file presenti nel TOC (evita che Sphinx indicizzi file in ambienti virtuali o cartelle extra)
+only_build_toc_files: true
 
 # Sphinx Book Theme customization
 sphinx:
