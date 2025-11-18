@@ -6,12 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-# Large astronomical data files
-*.fits
-*.fits.gz
-*.hdf5
-*.hpx
-
 # Distribution / packaging
 .Python
 build/
