@@ -50,7 +50,7 @@ git clone https://github.com/samueleronchini/acme_tutorials.git
 cd acme_tutorials
 
 # Create and activate virtual environment (recommended)
-python -m venv acme_tutorials
+python3.10 -m venv acme_tutorials
 source acme_tutorials/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install Jupyter if not already installed
