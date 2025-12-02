@@ -26,6 +26,7 @@ dependencies:
       - tables
       - sympy
       - git+https://github.com/janosch314/GWFish.git
+      - git+https://git.ligo.org/lscsoft/raven.git
       - gcn-kafka
       # Note: Pacchetti NON installati su Binder (troppo pesanti):
       # - lalsuite (troppo pesante, causa timeout su Binder)
