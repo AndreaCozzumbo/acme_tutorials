@@ -38,6 +38,9 @@ git+https://github.com/janosch314/GWFish.git
 # GCN Kafka client for alerts
 gcn-kafka
 
+# RAVEN package for coincidence and FAR calculations
+git+https://git.ligo.org/lscsoft/raven.git
+
 # NOTE: Packages NOT included for Binder compatibility:
 # - lalsuite (>500MB, causes Binder timeout - use local install)
 # For full functionality with lalsuite, install locally with: pip install lalsuite

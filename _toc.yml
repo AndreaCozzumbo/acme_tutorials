@@ -4,8 +4,15 @@
 format: jb-book
 root: intro
 parts:
+  - caption: RAVEN
+    chapters:
+      - file: raven/intro
+      - file: raven/coinc
+      - file: raven/skymap_far
+      - file: raven/handson
   - caption: Multi-messenger Alert System
     chapters:
+      - file: alerts/presentation
       - file: alerts/intro
       - file: alerts/kafka
       - file: alerts/igwn
@@ -13,7 +20,7 @@ parts:
       - file: alerts/skymaps
       - file: alerts/pingpong
       - file: alerts/icecube
-      - file: alerts/fink
+      #- file: alerts/fink
       - file: alerts/slack
       - file: alerts/telegram
       - file: alerts/mail
@@ -23,8 +30,6 @@ parts:
       - file: GWFish/gwfish_tutorial
       - file: GWFish/supernova_signals
       - file: GWFish/cosmo_tutorial/cosmo_tutorial
-  - caption: Presentations
-    chapters:
-      - file: presentation
+
   
   
