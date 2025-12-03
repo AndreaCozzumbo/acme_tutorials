@@ -9,6 +9,7 @@ parts:
       - file: raven/intro
       - file: raven/coinc
       - file: raven/skymap_far
+      - file: raven/offline
       - file: raven/handson
   - caption: Multi-messenger Alert System
     chapters:

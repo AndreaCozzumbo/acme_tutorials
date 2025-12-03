@@ -156,3 +156,6 @@ alerts/credentials.txt
 
 # MyST build outputs
 _build
+
+# Generated skymaps (do not commit)
+raven/skymaps/
