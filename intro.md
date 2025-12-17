@@ -7,7 +7,7 @@ Welcome to the ACME Tutorials site! This collection provides hands-on tutorials 
 - **GWFish**: Gravitational wave Fisher matrix analysis
 - **Alerts**: Real-time alert streaming and processing
 - **RAVEN**: Computing the significance of multi-messenger candidates
-- **BAT-GLIMPSE**: Coming soon
+- **BAT-GLIMPSE**: Gamma-ray Localization using Imaging and Mosaic techniques for Pointing and Slew Epochs
 
 ## Interactive Notebooks
 
