@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 parts:
+  - caption: BAT-GLIMPSE
+    chapters:
+      - file: bat_glimpse/intro
+      - file: bat_glimpse/imaging
+      - file: bat_glimpse/mosaic
+      - file: bat_glimpse/handson
   - caption: RAVEN
     chapters:
       - file: raven/intro
