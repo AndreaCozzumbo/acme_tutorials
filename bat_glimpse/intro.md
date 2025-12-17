@@ -15,9 +15,11 @@ The notebooks on this tutorial cannot be run using Binder, since a working Heaso
 4. Create Container
 5. Select Heasarc 6.36 as compute image and select Heasarc data in data volumes
 6. Click on the container just created and a Jupyter interface will appear
-7. Open a terminal and do `git clone https://github.com/samueleronchini/acme_tutorials.git`
-8. in ./acme_tutorials/bat_glimpse you will find the same tutorials that you see on this webpage
-9. Open them and enjoy!
+7. Open a terminal
+8. `cd /home/idies/workspace/Storage/[yourusername]/persistent` replacing yourusername
+9. `git clone https://github.com/samueleronchini/acme_tutorials.git`
+10. in ./acme_tutorials/bat_glimpse you will find the same tutorials that you see on this webpage
+11. Open them and enjoy!
 
 ```{note}
 The implementation of BAT-GLIMPSE and creation of this tutorial were possible with the great support of Tyler Parsotan. Most of the functions used here are from the BatAnalysis package (https://github.com/parsotat/BatAnalysis).
