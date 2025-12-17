@@ -8,6 +8,17 @@ Click the button below to view the presentation:
   </a>
 </div>
 
+The notebooks on this tutorial cannot be run using Binder, since a working Heasoft installation is needed. The user can instead use SciServer to run them. Here a quick start:
+1. Go to [SciServer](https://www.sciserver.org)
+2. Create an account
+3. Go to [compute](https://apps.sciserver.org/compute/login?callbackUrl=https%3A%2F%2Fapps.sciserver.org%2Fcompute)
+4. Create Container
+5. Select Heasarc 6.36 as compute image and select Heasarc data in data volumes
+6. Click on the container just created and a Jupyter interface will appear
+7. Open a terminal and do `git clone https://github.com/samueleronchini/acme_tutorials.git`
+8. in ./acme_tutorials/bat_glimpse you will find the same tutorials that you see on this webpage
+9. Open them and enjoy!
+
 ```{note}
 The implementation of BAT-GLIMPSE and creation of this tutorial were possible with the great support of Tyler Parsotan. Most of the functions used here are from the BatAnalysis package (https://github.com/parsotat/BatAnalysis).
 ```
