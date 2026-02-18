@@ -4,6 +4,13 @@
 format: jb-book
 root: intro
 parts:
+  - caption: MAGGPY
+    chapters:
+      - file: maggpy/tutorial0_data_preparation
+      - file: maggpy/tutorial1_tophat
+      - file: maggpy/tutorial2_structured_jet
+      - file: maggpy/tutorial3_gwfish_joint_detections
+      - file: maggpy/tutorial4_gwfish_skyloc
   - caption: BAT-GLIMPSE
     chapters:
       - file: bat_glimpse/intro
