@@ -8,6 +8,7 @@ Welcome to the ACME Tutorials site! This collection provides hands-on tutorials 
 - **Alerts**: Real-time alert streaming and processing
 - **RAVEN**: Computing the significance of multi-messenger candidates
 - **BAT-GLIMPSE**: Gamma-ray Localization using Imaging and Mosaic techniques for Pointing and Slew Epochs
+- **MAGGPY**: connecting neutron star margers and short GRB populations
 
 ## Interactive Notebooks
 
