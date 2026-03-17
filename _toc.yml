@@ -6,6 +6,7 @@ root: intro
 parts:
   - caption: NITRATES
     chapters:
+      - file: nitrates/intro
       - file: nitrates/nitrates
       - file: nitrates/skyscan
       - file: nitrates/ul_skymap
