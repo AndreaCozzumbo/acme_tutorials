@@ -4,6 +4,11 @@
 format: jb-book
 root: intro
 parts:
+  - caption: NITRATES
+    chapters:
+      - file: nitrates/nitrates
+      - file: nitrates/skyscan
+      - file: nitrates/ul_skymap
   - caption: MAGGPY
     chapters:
       - file: maggpy/tutorial0_data_preparation
