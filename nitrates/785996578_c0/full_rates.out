@@ -1,4 +1,5 @@
-sh: /Users/sjs8171/caldb/caldbinit.sh: No such file or directory
+Could not get the $HEADAS system variable. Please ensure that this is set and points to the HEASOFT directory.
+Could not get the $CALDB system variable. Please ensure that this is set and points to the CALDB directory.
 No module named 'ROOT'
 Please install the Python ROOT package to be able to run the full forward modeling calculations.
 16
@@ -83,5 +84,5 @@ Please install the Python ROOT package to be able to run the full forward modeli
 285 172
 No module named 'ROOT'
 Please install the Python ROOT package to be able to run the full forward modeling calculations.
-/Users/sjs8171/opt/anaconda3/envs/nitrates_env/lib/python3.9/runpy.py:127: RuntimeWarning: 'nitrates.analysis_seeds.do_full_rates' found in sys.modules after import of package 'nitrates.analysis_seeds', but prior to execution of 'nitrates.analysis_seeds.do_full_rates'; this may result in unpredictable behaviour
+/opt/anaconda3/envs/nitrates_env/lib/python3.9/runpy.py:127: RuntimeWarning: 'nitrates.analysis_seeds.do_full_rates' found in sys.modules after import of package 'nitrates.analysis_seeds', but prior to execution of 'nitrates.analysis_seeds.do_full_rates'; this may result in unpredictable behaviour
 782 775
