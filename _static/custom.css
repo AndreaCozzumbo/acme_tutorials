@@ -84,6 +84,37 @@
     font-weight: 600;
 }
 
+/* Collapsible module groups in the primary sidebar */
+#bd-docs-nav .caption.acme-caption-toggle {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 1.2rem;
+}
+
+#bd-docs-nav .caption.acme-caption-toggle::after {
+    content: ">";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+#bd-docs-nav .caption.acme-caption-toggle.acme-expanded::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+#bd-docs-nav .nav.bd-sidenav.acme-collapsible-group {
+    display: none;
+}
+
+#bd-docs-nav .nav.bd-sidenav.acme-collapsible-group.acme-expanded {
+    display: block;
+}
+
 /* Content area */
 .bd-content {
     padding: 2rem;

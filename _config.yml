@@ -105,12 +105,15 @@ sphinx:
       home_page_in_navbar: true
       navigation_with_keys: false
       show_navbar_depth: 1
-      collapse_navigation: false
+      show_nav_level: 1
+      collapse_navigation: true
       announcement: ""
     html_logo: "alerts/images/acme.png"
     html_title: "ACME Tutorials"
     html_css_files:
       - custom.css
+    html_js_files:
+      - sidebar-accordion.js
     html_show_copyright: false
 
 # Launch buttons for interactive sessions

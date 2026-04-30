@@ -4,27 +4,11 @@ project:
   authors:
     - name: Samuele Ronchini
   github: https://github.com/samueleronchini/acme_tutorials
-  binder:
-    url: https://mybinder.org
+  binder: https://mybinder.org
   jupyter: true
   
 site:
   template: book-theme
   title: ACME Tutorials
-  nav:
-    - title: Home
-      url: /
-    - title: Sky Maps Tutorial
-      url: /alerts/skymaps
-    - title: Kafka Listener
-      url: /alerts/kafka_listener
-    - title: Post on Slack
-      url: /alerts/slack
-    - title: GWFish Tutorial
-      url: /GWFish/gwfish_tutorial
-    - title: Supernova Signals
-      url: /GWFish/supernova_signals
-    - title: Cosmology Tutorial
-      url: /GWFish/cosmo_tutorial/cosmo_tutorial
   options:
     logo: null
